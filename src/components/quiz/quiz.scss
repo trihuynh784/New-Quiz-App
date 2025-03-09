@@ -1,0 +1,18 @@
+.quiz {
+  &__item {
+    --ant-display: auto;
+    &--answers {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+    & input {
+      margin: 5px;
+      cursor: pointer;
+    }
+    & label {
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+}

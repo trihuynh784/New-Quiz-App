@@ -1,0 +1,51 @@
+.results {
+  &__header {
+    margin: 10px 0;
+    text-align: center;
+  }
+  &__list {
+    & form {
+      margin: auto;
+    }
+  }
+  &__item {
+    padding: 0 30px;
+    &--title {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      & h6 {
+        margin-right: 10px;
+      }
+      margin-right: 20px;
+      &-true {
+        color: white;
+        font-size: 16px;
+        border-radius: 45px;
+        padding: 4px 12px;
+        background: green;
+      }
+      &-false {
+        color: white;
+        font-size: 16px;
+        border-radius: 45px;
+        padding: 4px 12px;
+        background: red;
+      }
+    }
+    &-form {
+      & input {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.false {
+  color: red;
+}
+.true {
+  color: green;
+}

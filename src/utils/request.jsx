@@ -1,5 +1,6 @@
-// const API_DOMAIN = "http://localhost:3002/";
-const API_DOMAIN = "https://quiz-db.vercel.app/";
+// const API_DOMAIN = "http://localhost:3000/";
+// const API_DOMAIN = "https://quiz-db.vercel.app/";
+const API_DOMAIN = "https://quiz-app-be-pied.vercel.app/";
 
 export const get = async (path) => {
   const response = await fetch(API_DOMAIN + path);

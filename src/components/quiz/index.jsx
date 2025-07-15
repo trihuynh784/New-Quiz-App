@@ -29,7 +29,7 @@ function Quiz() {
     for (let i = 0; i < values.target.elements.length; i++) {
       if (values.target.elements[i].checked == true) {
         answersUser.push({
-          questionsId: parseInt(values.target.elements[i].name),
+          questionsId: values.target.elements[i].name,
           answer: parseInt(values.target.elements[i].value),
         });
       }
@@ -37,8 +37,8 @@ function Quiz() {
 
     const userId = getCookie("id");
     const options = {
-      topicId: parseInt(params.id),
-      userId: parseInt(userId),
+      topicId: params.id,
+      userId: userId,
       answers: answersUser,
     };
 

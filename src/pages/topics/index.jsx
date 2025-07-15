@@ -21,8 +21,8 @@ function TopicsPage() {
         <>
           <div className="container">
             <Row className="topic-row" gutter={[10, 20]}>
-              {topics.map((item) => (
-                <Col className="topic-row-col" md={10} xs={20} key={item.id}>
+              {topics.map((item, index) => (
+                <Col className="topic-row-col" md={10} xs={20} key={index}>
                   <div className="topic__item">
                     <div className="topic__item--title">{item.name}</div>
                     <div className="topic__item--desc">

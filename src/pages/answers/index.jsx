@@ -12,7 +12,9 @@ function AnswersPage() {
   useEffect(() => {
     const fetchApi = async () => {
       const userId = getCookie("id");
+      console.log(userId);
       const answersUserById = await getAnswersUserById(userId);
+      console.log(answersUserById);
       const topicsList = await getTopicsList();
       let isExist = new Set([]);
       const result = [];
